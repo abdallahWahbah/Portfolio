@@ -1,0 +1,34 @@
+*, 
+*::after, 
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html
+{
+    font-size: 62.5%; /* 10px(wanted) / 16px(default browser font size) = 62.5% */
+
+    @include respond(tab-land)
+    {
+        font-size: 56.25%; // 9px
+    }
+    @include respond(tab-port)
+    {
+        font-size: 50%; // 8px
+    }
+    @include respond(big-desktop)
+    {
+        font-size: 75%; // 12px
+    }
+}
+body
+{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: $color-main-font;
+    line-height: 1.7;
+    box-sizing: border-box;
+    background-color: $color-section-background;
+}

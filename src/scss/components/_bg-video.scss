@@ -1,0 +1,29 @@
+// .bg-video
+// {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -2;
+//     overflow: hidden;
+    
+//     &--content
+//     {
+//         height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//     }
+
+//     // this item is to make a darky color over the video to preview the heading in a white color
+//     &--color-over
+//     {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 0;
+//         background-image: linear-gradient(rgba($color-black, .6), rgba($color-black, .6));
+//     }
+// }

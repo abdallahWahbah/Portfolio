@@ -1,0 +1,306 @@
+// // example of animation .. you need to add the animate.css link, then go to the index.js and see the first 2 lines
+// // .js__href{opacity: 0;margin-top: 10rem;}
+// // .js__href.animate__animated{opacity: 1;}
+
+// // for animations
+// .section__numbers{opacity: 0;}
+// .section__numbers.animate__animated{opacity: 1;}
+
+
+// .section__video
+// {
+//     position: relative;
+//     height: 100vh;
+
+//     &--text
+//     {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -30%);
+//         z-index: 1;
+//         color: $color-white;
+//         width: 100%;
+
+//         .heading__secondary
+//         {
+//             font-weight: 400;
+//             letter-spacing: 3px;
+//             margin-bottom: 3rem;
+
+//             background-image: linear-gradient(to right, transparent, transparent);
+//             color: $color-white;
+//             -webkit-background-clip: border-box;
+//             background-clip: border-box;
+
+//             &::after
+//             {
+//                 background-color: $color-white;
+//             }
+
+//             &--paragraph
+//             {
+//                 color: $color-white;
+//                 font-weight: 300;
+//                 letter-spacing: 1px;
+                
+//                 @include respond(tab-port)
+//                 {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .section__numbers
+// {
+//     display: flex;
+    
+//     justify-content: space-between;
+
+//     @include respond(tab-port){flex-wrap: wrap;}
+//     .number__item
+//     {
+//         display: flex;
+//         align-items: center;
+
+//         @include respond(tab-port)
+//         {
+//             flex: 0 1 50%;
+//             margin: 0 auto;
+//             margin-bottom: 2rem;
+//             &:last-of-type,
+//             &:nth-child(3)
+//             {margin-bottom: 0;}
+//         }
+//         @include respond(phone)
+//         {
+//             flex: 0 1 100%; 
+//             &:not(:last-of-type){margin-bottom: 2rem !important;}
+//         }
+
+//         &--icon-container
+//         {
+//             height: 5rem;
+//             width: 5rem;
+//             background: $color-primary;
+//             margin-right: 2rem;
+
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         &--icon
+//         {
+//             // font-size: 2rem;
+//             height: 3rem;
+//             width: 3rem;
+            
+//             color: $color-white;
+//         }
+//         &--number
+//         {
+//             font-size: 2.8rem;
+//             font-weight: 700;
+//             margin-right: 2rem;
+//         }
+//         &--title
+//         {
+//             color: $color-grey-dark-3;
+//             font-size: 1.4rem;
+//             font-weight: 400;
+//             letter-spacing: 1px;
+//         }
+//     }
+// }
+
+// .section__testimonials
+// {
+//     background-image: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url('../img/meeting.jfif');
+//     background-size: cover;
+//     background-position: center;
+//     height: 100vh;
+//     padding: 0;
+
+//     & > *
+//     { 
+//         padding: 6rem;
+
+//         @include respond(tab-port)
+//         {
+//             padding: 4rem;
+//         }
+//     }
+
+//     .heading__secondary--container{padding-bottom: 0;}
+
+//     .slider
+//     {
+//         height: 60vh;
+//         z-index: 1111;
+//         color: white;
+//         padding: 0;
+//         // background-color: red;
+
+//         & > *{background: none;}
+//         .slide
+//         {
+//             height: auto;
+//             &:hover .slider__typo
+//             {
+//                 transform: translateX(0);
+//             }
+//         }
+//         &__typo
+//         {
+//             margin-top: 4rem;
+//         }
+//         &__btn
+//         {
+//             top: auto;
+//             bottom: -5%;
+//             &--left{left: 45%;}
+//             &--right{right: 45%;}
+
+//             @include respond(tab-land){bottom: 0;}
+//             @include respond(tab-port) {bottom: 5%;}
+//             @include respond(phone) {bottom: -5%;}
+//         }
+//     }
+
+//     .testimonial
+//     {
+//         &__paragraph
+//         {
+//             width: 50%;
+//             text-align: center;
+//             margin: 0 auto;
+//             font-size: 1.4rem;
+//             font-weight: 300;
+//             letter-spacing: 1px;
+
+//             @include respond(tab-land) {width: 60%; font-size: 1.7rem;}
+//         }
+//         &__image
+//         {
+//             width: 7rem;
+//             height: 7rem;
+//             border-radius: 50%;
+//             border: 2px solid $color-white;
+//             margin: 4rem 0 1rem 0;
+//         }
+//         &__name
+//         {
+//             font-size: 1.4rem;
+//             font-weight: 300;
+//             letter-spacing: 1px;
+//             text-transform: uppercase;
+//         }
+//     }
+    
+// }
+
+.home, .about, .resume, .portfolio, .contact
+{
+    margin-left: 17%;
+    // min-height: 100vh;
+    background-color: $color-section-background;
+    overflow: hidden !important;
+}
+
+.home
+{
+    position: relative;
+    height: 100vh;
+
+    // &__video--background
+    // {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //     // display: none;
+    // }
+
+    &__container
+    {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__about
+    {
+        font-size: 1.8rem;
+        width: 82%;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 4rem;
+    }
+    .social__media
+    {
+        &--list
+        {
+            list-style: none;
+        
+            display: flex;
+
+            & > *:not(:last-child)
+            {
+                margin-right: 6.5rem;
+            }
+        }
+        &--item
+        {
+            font-size: 2.5rem;
+            position: relative;
+            cursor: pointer;
+        }
+
+        &--item:hover .social__media--border
+        {
+            border: 2px solid $color-primary-hover;
+        }
+
+        &--item:hover .social__media--link
+        {
+            color: $color-primary-hover
+        }
+
+        &--border
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 2px solid $color-navigation-border;
+            width: 5rem;
+            height: 5rem;
+            transition: all .5s ease-in-out;
+        }
+        &--link
+        {
+            color: inherit;
+            transition: all .5s ease-in-out;
+        }
+        &--icon
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+}

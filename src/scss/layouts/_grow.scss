@@ -1,0 +1,78 @@
+// // for animations
+// .js--animation--left{opacity: 0;}
+// .js--animation--left.animate__animated{opacity: 1;}
+// .js--animation--right{opacity: 0;}
+// .js--animation--right.animate__animated{opacity: 1;}
+
+// .section__grow
+// {
+//     display: flex;
+//     flex-direction: column;
+
+//     .grow
+//     {
+//         display: flex;
+//         align-items: center;
+
+//         @include respond(tab-port)
+//         {
+//             flex-wrap: wrap;
+//         }
+//         &>*
+//         {
+//             flex: 0 1 50%;
+            
+//             @include respond(tab-port)
+//             {
+//                 flex: 0 1 100%;
+//             }
+//         }
+
+//         &__left
+//         {
+//             &--content
+//             {
+            
+//                 &-paragraph
+//                 {
+//                     width: 90%;
+//                     font-size: 1.3rem;
+//                     letter-spacing: .5px;
+//                     margin-bottom: 2rem;
+
+//                     @include respond(tab-port)
+//                     {
+//                         width: 100%;
+//                         font-size: 1.5rem;
+//                         letter-spacing: 1px;
+//                     }
+
+//                     @include respond(phone)
+//                     {
+//                         font-size: 1.3rem;
+//                     }
+//                 }
+//             }
+//             &--button
+//             {
+//                 color: white;
+//                 background: $color-grey-dark;
+//                 background-image: linear-gradient(to right, transparent 0%, transparent 50%, $color-grey-dark-3 50%);
+//                 background-size: 230%;
+//                 animation: none;
+
+//                 &:hover, &:active
+//                 {
+//                     background-position: 99%;
+//                 }
+//             }
+//         }
+//         &__right
+//         {
+//             &--image
+//             {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }

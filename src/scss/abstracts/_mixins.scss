@@ -1,0 +1,22 @@
+/*
+    1em = 16px (browser's default font-size)
+*/
+@mixin respond($break-point) {   // em and rem are not affected by root font-size in media queries, but em is better
+    @if($break-point == phone)
+    {
+        @media only screen and (max-width: 37.5em){@content}; // <= 600px
+    }
+    @if($break-point == tab-port)
+    {
+        @media only screen and (max-width: 56.25em){@content}; // <= 900px
+    }
+    @if($break-point == tab-land) 
+    {
+        @media only screen and (max-width: 75em){@content};   // <= 1200px
+    }
+    //[1200px - 1800px]:   is where our normal style apply >>>>>> (no media queries will be applied)
+    @if($break-point == big-desktop)
+    {
+        @media only screen and (min-width: 112.5em){@content}; // <= 1800px
+    }
+}

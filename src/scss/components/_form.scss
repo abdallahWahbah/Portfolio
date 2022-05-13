@@ -1,0 +1,134 @@
+// .section__contact
+// {
+//     background-color: $color-grey-light-1;
+// }
+
+// .contact
+// {
+//     display: flex;
+//     justify-content: space-between;
+
+//     @include respond(tab-land){flex-wrap: wrap;}
+
+//     &>*
+//     {
+//         flex: 0 1 45%;
+//         @include respond(tab-land){flex: 0 1 90%; margin: 0 auto;}
+//     }
+
+//     &__form
+//     {
+//         &--two--items
+//         {
+//             margin-bottom: 2rem;
+
+//             display: flex;
+//             justify-content: space-between;
+
+//             @include respond(tab-port){flex-wrap: wrap;}
+//         }
+//         &--input, &--text--area
+//         {
+//             flex: 0 1 45%;
+//             border: none;
+//             background: $color-grey-light-2;
+//             padding: 1rem 2rem;
+//             color: inherit;
+//             font-weight: inherit;
+//             letter-spacing: 1px;
+//             border-radius: 2px;
+//             font-size: 1.4rem;
+
+//             &:focus{outline: none;}
+//         }   
+//         &--input
+//         {
+//             flex: 0 1 45%;
+//             @include respond(tab-port)
+//             {
+//                 flex: 0 1 60%; 
+//                 margin: 0 auto;
+//                 &:first-child{margin-bottom: 2rem;}
+//             }
+//             @include respond(phone){flex: 0 1 80%;}
+//         }
+//         &--text--area
+//         {
+//             width: 100%;
+//             height: 20rem;
+            
+//             display: block;
+//             @include respond(tab-port){margin: 0 auto;width: 60%;}
+//             @include respond(phone){width: 80%;}
+//         }
+
+//         .slider__view
+//         {
+//             background: $color-primary;
+//             color: $color-white;
+//             animation: none;
+//             background-image: linear-gradient(to right, transparent 0%, transparent 50%, #d42825 50%);
+//             background-size: 230%;
+//             display: block;
+
+//             @include respond(tab-land){margin-bottom: 3rem;}
+//             @include respond(tab-port){margin: 3rem auto;}
+//         }
+//     }
+
+//     &__info
+//     {
+//         &--paragraph
+//         {
+//             font-size: 1.4rem;
+//             margin-bottom: 1.5rem;
+//             @include respond(tab-land){margin-bottom: 2rem; font-size: 1.6rem;}
+//             @include respond(tab-port){text-align: center;}
+//         }
+//         &--item
+//         {
+//             display: flex;
+//             align-items: center;
+//             &:not(:last-of-type){margin-bottom: 2rem;}
+//             @include respond(tab-port)
+//             {
+//                 width: 60%;
+//                 margin: 0 auto;
+//                 justify-content: flex-end;
+//             }
+//             @include respond(phone)
+//             {
+//                 flex-direction: column;
+//             }
+            
+//         }
+//         &--icon
+//         {
+//             background-color: $color-primary;
+//             font-size: 3rem;
+//             padding: 1rem;
+//             color: $color-white;
+//             margin-right: 2rem;
+//             @include respond(phone){margin-right: 0;margin-bottom: 1rem;}
+//         }
+//         &--two--items
+//         {
+//             @include respond(tab-port){flex: 0 1 60%;}
+//             @include respond(phone)
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 text-align: center;
+//             }
+//         }
+//         &--header
+//         {
+//             font-size: 1.6rem;
+//         }
+//         &--value
+//         {
+//             font-size: 1.4rem;
+//             font-weight: 400;
+//         }
+//     }
+// }
