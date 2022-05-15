@@ -5,17 +5,17 @@
 @import 'base/base';
 @import 'base/typography';
 
-// @import 'components/bg-video';
 // @import 'components/form';
-// @import 'components/post';
-// @import 'components/slider';
+@import 'components/timeline';
 
 // @import 'layouts/footer';
 // @import 'layouts/grow';
 @import 'layouts/navigation';
 // @import 'layouts/portfolio';
 // @import 'layouts/service';
-// @import 'layouts/skills';
+@import 'layouts/skills';
 // @import 'layouts/team';
 
+@import 'pages/about';
 @import 'pages/home';
+// @import 'pages/resume';

@@ -1,0 +1,58 @@
+// .skills__list
+// {
+//     list-style: none;
+//     margin-bottom: 8rem;
+
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+// .skill
+// {
+//     &__item
+//     {
+//         flex-basis: 50%;
+//         margin-bottom: 2.7rem;
+//     }
+
+//     &__title
+//     {
+//         color: white;
+//         font-size: 1.8rem;
+//         font-weight: 600;
+//     }
+//     &__percentage--container
+//     {
+//         display: flex;
+//         align-items: center;
+//     }
+//     &__percentage
+//     {
+//         font-size: 1.8rem;
+//         font-weight: 300;
+//         flex-basis: 10%;
+//     }
+//     &__line
+//     {
+//         position: relative;
+//         height: .5rem;
+//         flex-basis: 85%;
+
+//         &--background, &--above
+//         {
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//             height: 100%
+//         }
+//         &--background
+//         {
+//             width: 100%;
+//             background-color: $color-navigation-border;
+//         }
+//         &--above
+//         {
+//             left: 0;
+//             background-color: $color-primary;
+//         }
+//     }
+// }

@@ -91,14 +91,101 @@
 //     }
 // }
 
-.heading__primary
+.heading__primary, .heading__secondary
 {
     font-size: 5rem;
-    font-weight: 700;
     color: $color-white;
-
+    
     &--sub
     {
         color: $color-primary;
+    }
+}
+.heading__primary // used in Home section
+{
+    font-weight: 700;
+    font-size: 5rem;
+}
+.heading__secondary // used in About section
+{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.main__paragraph // used in About section
+{
+    font-size: 1.8rem;
+}
+
+.main__button
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background-color: $color-primary;
+    padding: 1.5rem 3.5rem;
+    margin-top: 2rem;
+    display: inline-block;
+    position: relative;
+
+    &::before
+    {
+        content: " ";
+        position: absolute;
+        height: 4%;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background-color: $color-white;
+        transition: all .3s ease-out;
+    }
+    
+    &:hover::before
+    {
+        width: 100%;
+    }
+}
+
+.section__header
+{
+    // margin-bottom: 4rem;
+    color: $color-white;
+    
+    &--main
+    {
+        font-size: 4.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &--line
+    {
+        height: .5rem;
+        border-radius: 1rem;
+        width: 10rem;
+        background-color: $color-primary-light;
+        display: block;
+        position: relative;
+
+        &::after
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35%;
+            height: 100%;
+            background-color: $color-primary;
+            border-radius: 1rem;
+        }
+    }
+    &--sub
+    {
+        font-size: 7rem;
+        margin-top: -5rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: $color-section-header-background;
     }
 }

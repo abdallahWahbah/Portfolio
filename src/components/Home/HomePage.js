@@ -1,11 +1,8 @@
 import React, {useEffect, useRef} from 'react'
 
 import { init } from 'ityped'
-import { FiFacebook } from "react-icons/fi";
-import {IoLogoGithub} from "react-icons/io";
-import {FaLinkedinIn} from 'react-icons/fa';
-
-import videoBackground from '../assets/particles-3.mp4'
+import videoBackground from '../../assets/particles-3.mp4'
+import { socialMediaData } from '../JsonData'
 
 const HomePage = () => 
 {
@@ -39,24 +36,14 @@ const HomePage = () =>
                     and fulfill user stories.
                 </p>
                 <ul className='social__media--list'>
-                    <li  className='social__media--item'>
-                        <div className='social__media--border'></div>
-                        <a href='https://www.facebook.com/abdowahbah/' target="_blank" rel="noreferrer" className='social__media--link'>
-                            <FiFacebook className='social__media--icon'/>
-                        </a>
-                    </li>
-                    <li  className='social__media--item'>
-                        <div className='social__media--border'></div>
-                        <a href='https://github.com/abdallahWahbah' target="_blank" rel="noreferrer" className='social__media--link'>
-                            <IoLogoGithub className='social__media--icon'/>
-                        </a>
-                    </li>
-                    <li  className='social__media--item'>
-                        <div className='social__media--border'></div>
-                        <a href='https://www.linkedin.com/in/abdallah-wahbah/' target="_blank" rel="noreferrer" className='social__media--link'>
-                            <FaLinkedinIn className='social__media--icon'/>
-                        </a>
-                    </li>
+                    {socialMediaData.map(item => (
+                        <li className='social__media--item' key={item.href}>
+                            <div className='social__media--border'></div>
+                            <a href={item.href} target="_blank" rel="noreferrer" className='social__media--link'>
+                                {item.icon}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>

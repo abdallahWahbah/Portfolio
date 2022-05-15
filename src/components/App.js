@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
 
-import HomePage from './HomePage';
-import About from './About';
-import Resume from './Resume';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
+import HomePage from './Home/HomePage';
+import About from './About/About';
+import Resume from './Resume/Resume';
+import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
 import MainNavigation from './MainNavigation';
 
 const App = () => 
