@@ -1,8 +1,13 @@
 import { FiFacebook } from "react-icons/fi";
 import {IoLogoGithub} from "react-icons/io";
 import {FaLinkedinIn} from 'react-icons/fa';
-import {BsBriefcase} from 'react-icons/bs'
-import {GoBook} from 'react-icons/go'
+import {BsBriefcase} from 'react-icons/bs';
+import {GoBook} from 'react-icons/go';
+
+import agencyPoster from '../assets/agencyPoster.jpg';
+import fashionPoster from '../assets/fashionPoster.avif';
+import san3aPoster from '../assets/san3aPoster.avif';
+import brandsPoster from '../assets/brandsPoster.jpg';
 
 // MainNavigation Component
 export const mainNavigationItems = 
@@ -167,3 +172,39 @@ export const educationTimeline =
         },
     ]
 }
+
+// Portfolio Component
+export const projects =
+[
+    {
+        poster: agencyPoster,
+        videoURL: "https://www.youtube.com/embed/WVEHZPI9tG4",
+        liveURL: "https://agency-wahbah.netlify.app/",
+        githubURL: "https://github.com/abdallahWahbah/Agency",
+        title: "Agency template",
+        description: "A landing page made using HTML5, CSS3, SASS, js"
+    },
+    {
+        poster: fashionPoster,
+        videoURL: "https://www.youtube.com/embed/lL-1FranDDo",
+        liveURL: "https://fashion-wahbah.netlify.app/",
+        githubURL: "https://github.com/abdallahWahbah/Fashion",
+        title: "Fashion template",
+        description: "Imitating landing page using HTML5, CSS3, SASS, js"
+    },
+    {
+        poster: san3aPoster,
+        videoURL: "https://www.youtube.com/embed/ErrlFSpbIV8",
+        githubURL: "https://github.com/abdallahWahbah/San3a-New-Version",
+        title: "San3a website",
+        description: "A 13-page e-commerce website made using HTML, CSS, SASS, JS , MVC pattern and AXIOS"
+    },
+    {
+        poster: brandsPoster,
+        videoURL: "https://www.youtube.com/embed/7znVD9jUnr0",
+        githubURL: "https://github.com/abdallahWahbah/Brands",
+        title: "Brands",
+        description: "A landing page made using HTML5, CSS3, SASS, js"
+    },
+    
+]
