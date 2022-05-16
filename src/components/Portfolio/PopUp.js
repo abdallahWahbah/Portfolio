@@ -32,6 +32,7 @@ const PortalContent = ({type, videoURL}) =>
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
+                    
                     title="video" 
                 />
             ) : (
