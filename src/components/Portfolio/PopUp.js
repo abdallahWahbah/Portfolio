@@ -32,7 +32,7 @@ const PortalContent = ({type, videoURL}) =>
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
-                    title="video"
+                    title="video" 
                 />
             ) : (
                 <div className='popup__message'>
