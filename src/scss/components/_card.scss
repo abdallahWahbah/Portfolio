@@ -1,0 +1,59 @@
+.card
+{
+    background: $color-navigation-background;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    &__icon
+    {
+        border: 1px solid $color-navigation-border;
+        margin-right: 2rem;
+        padding: 2rem;
+        font-size: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title
+    {
+        font-size: 1.8rem;
+        color: $color-white;
+        font-weight: 400;
+        margin-bottom: .7rem;
+    }
+
+    &__links
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link
+    {
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.7rem;
+        transition: all .2s ease;
+        cursor: pointer;
+
+        &:hover
+        {
+            color: $color-primary;
+        }
+
+        &--nohover
+        {
+            &:hover
+            {
+                color: inherit;
+                cursor: default;
+            }
+        }
+    }
+}

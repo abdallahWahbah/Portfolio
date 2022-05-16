@@ -3,11 +3,16 @@ import {IoLogoGithub} from "react-icons/io";
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsBriefcase} from 'react-icons/bs';
 import {GoBook} from 'react-icons/go';
+import {BsTelephone} from 'react-icons/bs';
+import {AiOutlineMail} from 'react-icons/ai'
+import {IoLocationOutline} from 'react-icons/io5';
 
 import agencyPoster from '../assets/agencyPoster.jpg';
 import fashionPoster from '../assets/fashionPoster.avif';
 import san3aPoster from '../assets/san3aPoster.avif';
 import brandsPoster from '../assets/brandsPoster.jpg';
+import * as yup from 'yup';
+
 
 // MainNavigation Component
 export const mainNavigationItems = 
@@ -207,4 +212,90 @@ export const projects =
         description: "A landing page made using HTML5, CSS3, SASS, js"
     },
     
+]
+
+// Contact Component
+export const contactData = 
+[
+    {
+        icon: <BsTelephone />,
+        title: "Phone",
+        data:
+        [
+            {
+                href: "https://api.whatsapp.com/send?phone=01092717902",
+                linkTitle: "01092717902"
+            }
+        ]
+        
+    },
+    {
+        icon: <AiOutlineMail />,
+        title: "Email",
+        data:
+        [
+            {
+                href: "mailto:abdowahbah@gmail.com",
+                linkTitle: "abdowahbah@gmail.com"
+            },
+            {
+                href: "mailto:abdowahbah123@yahoo.com",
+                linkTitle: "abdowahbah123@yahoo.com"
+            },
+            {
+                href: "https://m.me/abdowahbah",
+                linkTitle: "facebook: abdowahbah"
+            },
+            
+        ]
+        
+    },
+    {
+        icon: <IoLocationOutline />,
+        title: "Address",
+        data:
+        [
+            {
+                // href: "https://api.whatsapp.com/send?phone=01092717902",
+                linkTitle: "El Sheikh Zaid, Al Jizah, Egypt"
+            }
+        ]
+        
+    },
+    
+]
+
+// Form Component
+export const ContactSchema = 
+[
+    {
+        name: "name",
+        id: "name",
+        type: "text",
+        label: "Enter your name*",
+        initialValue: "",
+        validator: yup.string().min(7).required("Name is required")
+    },
+    {
+        name: "email",
+        id: "email",
+        type: "email",
+        label: "Enter your email*",
+        initialValue: "",
+        validator: yup.string().email("email must be valid").required("Email is required")
+    },
+    {
+        name: "message",
+        id: "message",
+        label: "Enter your message*",
+        rows: 8,
+        cols: 50,
+        initialValue: "",
+        validator: yup.string().min(10, "Your Message should consist of at least 10 letters").required("Message is required"),
+    },
+    {
+        name: "button",
+        label: "Send Mail",
+        type: "submit"
+    }
 ]

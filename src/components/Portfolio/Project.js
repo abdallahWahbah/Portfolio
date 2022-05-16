@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import ProjectVideo from './ProjectVideo'
+import PopUp from './PopUp'
 import {TiMediaPlayOutline} from 'react-icons/ti'
 import {BsEyeFill} from 'react-icons/bs'
 import {FiCode} from 'react-icons/fi'
@@ -36,7 +36,11 @@ const Project = (props) =>
             <p className='project__description'>{description}</p>
 
             {showVideo && (
-                <ProjectVideo videoURL={videoURL} onClose={() => setShowVideo(false)}/>
+                <PopUp 
+                    videoURL={videoURL} 
+                    onClose={() => setShowVideo(false)}
+                    type="video"    
+                />
             )}
         </div>
     )

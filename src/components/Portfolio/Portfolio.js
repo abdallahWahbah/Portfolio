@@ -7,7 +7,7 @@ import { projects } from '../JsonData';
 const Portfolio = () => 
 {
     return (
-        //css files: page/home, components/project, components/video
+        //css files: page/home, base/typography, components/project, components/video
         <div className='portfolio'>
             <Header title="Portfolios"/>
 

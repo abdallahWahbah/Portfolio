@@ -14,8 +14,18 @@ h1{margin-bottom: 0 !important;}
     background-color: $color-section-background;
     overflow: hidden !important;
 }
-.home{padding: 0;}
 
+.contact__container
+{
+    display: flex;
+
+    & > *
+    {
+        flex-basis: 50%;
+    }
+}
+
+.home{padding: 0;}
 .home
 {
     position: relative;
