@@ -11,7 +11,22 @@ import PopUp from '../Portfolio/PopUp';
 const ContactForm = () => 
 {
     const formRef = useRef();
-    const [showSuccessfulMessage, setShowSuccessfulMessage] = useState(false);
+    const [showMessage, setShowMessage] = useState(false);
+    const [messagePassed, setMessagePassed] = useState(null);
+
+    const messageData =
+    {
+        passed: 
+        {
+            title: "Done!",
+            content: "Your message is successfully sent"
+        },
+        failed:
+        {
+            title: "Failed!",
+            content: "Failed to send yout message, Please use the direct links"
+        }
+    }
 
     const onSubmit =  values =>
     {
@@ -19,11 +34,14 @@ const ContactForm = () =>
 
         emailjs.sendForm('service_ggjkvw9', 'template_lwnlutc', formRef.current, "UmtmezqLS36L9eJmO")
         .then((result) => {
-            console.log(result.text);
-            setShowSuccessfulMessage(true);
+            // console.log(result.text);
+            setShowMessage(true);
+            setMessagePassed(true);
             formik.resetForm();
         }, (error) => {
-            console.log(error.text);
+            // console.log(error.text);
+            setShowMessage(true);
+            setMessagePassed(false);
         });
 
     }
@@ -43,10 +61,11 @@ const ContactForm = () =>
         // CSS file: components/form
         <form className='form' onSubmit={formik.handleSubmit} autoComplete="off" ref={formRef}>
             {formContent}
-            {showSuccessfulMessage && (
+            {showMessage && (
                 <PopUp 
-                    onClose={() => setShowSuccessfulMessage(false)}
+                    onClose={() => setShowMessage(false)}
                     type="message" 
+                    messageData={messagePassed ? messageData.passed : messageData.failed}
                 />
             )}
         </form>

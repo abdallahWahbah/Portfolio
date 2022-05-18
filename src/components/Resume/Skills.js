@@ -3,6 +3,7 @@ import React from 'react'
 const Skills = ({skills}) => 
 {
     return (
+        // css file: layout/skills
         <ul className='skills__list'>
             {skills?.map(skill => (
                 <li key={skill.title} className="skill__item">

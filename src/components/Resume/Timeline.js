@@ -3,6 +3,7 @@ import React from 'react'
 const Timeline = ({workTimeline}) => 
 {
     return (
+        // css file: components/timeline
         <div className='timeline'>
             <div className='timeline__header--container'>
                 <div className='timeline__item--icon'>

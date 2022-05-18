@@ -13,20 +13,11 @@ const PortalBackground = ({onClose}) =>
         </div>
     )
 }
-const PortalContainer = ({videoURL, type}) =>
+const PortalContainer = ({videoURL, type, messageData}) =>
 {
     return (
         <div className='popup__content'>
-            <PortalContent videoURL={videoURL} type={type}/>
-        </div>
-    )
-}
-
-const PortalContent = ({type, videoURL}) =>
-{
-    return (
-        <React.Fragment>
-            {type === "video" ? (
+            {type === "video" && (
                 <iframe
                     src={videoURL}
                     frameBorder="0"
@@ -34,22 +25,27 @@ const PortalContent = ({type, videoURL}) =>
                     allowFullScreen
                     title="video" 
                 />
-            ) : (
+            )}
+            {type === "message" && (
                 <div className='popup__message'>
-                    <h5 className='popup__message--title'>Done!</h5>
-                    <p className='main__paragraph'>Your message is successfully sent</p>
+                    <h5 className='popup__message--title'>{messageData.title}</h5>
+                    <p className='main__paragraph'>{messageData.content}</p>
                 </div>
             )}
-        </React.Fragment>
+        </div>
     )
 }
 
-const PopUp = ({videoURL, onClose, type}) => 
+const PopUp = ({videoURL, onClose, type, messageData}) => 
 {
     return (
         <React.Fragment>
             {ReactDOM.createPortal(<PortalBackground onClose={onClose}/>, document.querySelector(".portal__background"))}
-            {ReactDOM.createPortal(<PortalContainer videoURL={videoURL} type={type}/>, document.querySelector(".portal__content"))}
+            {ReactDOM.createPortal(<PortalContainer 
+                                        videoURL={videoURL} 
+                                        type={type} 
+                                        messageData={messageData}/>, 
+                                        document.querySelector(".portal__content"))}
         </React.Fragment>
     )
 }
