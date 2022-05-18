@@ -187,7 +187,7 @@ export const projects =
         liveURL: "https://agency-wahbah.netlify.app/",
         githubURL: "https://github.com/abdallahWahbah/Agency",
         title: "Agency template",
-        description: "A landing page made using HTML5, CSS3, SASS, js"
+        description: "A landing page made using HTML5, CSS3, SASS and JS"
     },
     {
         poster: fashionPoster,
@@ -195,7 +195,7 @@ export const projects =
         liveURL: "https://fashion-wahbah.netlify.app/",
         githubURL: "https://github.com/abdallahWahbah/Fashion",
         title: "Fashion template",
-        description: "Imitating landing page using HTML5, CSS3, SASS, js"
+        description: "Imitating landing page using HTML5, CSS3, SASS and JS"
     },
     {
         poster: san3aPoster,
@@ -209,7 +209,7 @@ export const projects =
         videoURL: "https://www.youtube.com/embed/7znVD9jUnr0",
         githubURL: "https://github.com/abdallahWahbah/Brands",
         title: "Brands",
-        description: "A landing page made using HTML5, CSS3, SASS, js"
+        description: `CRUD operations using React, Routing, Redux Toolkit, MUI, Formik and Expressjs with Mongodb`
     },
     
 ]
@@ -223,7 +223,7 @@ export const contactData =
         data:
         [
             {
-                href: "https://api.whatsapp.com/send?phone=01092717902",
+                href: "https://api.whatsapp.com/send?phone=201092717902",
                 linkTitle: "01092717902"
             }
         ]
@@ -256,9 +256,14 @@ export const contactData =
         data:
         [
             {
-                // href: "https://api.whatsapp.com/send?phone=01092717902",
+                type: "address",
                 linkTitle: "El Sheikh Zaid, Al Jizah, Egypt"
-            }
+            },
+            {
+                type: "address",
+                linkTitle: "Mansoura, Dakahlia, Egypt"
+            },
+            
         ]
         
     },

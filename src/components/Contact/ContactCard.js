@@ -14,7 +14,7 @@ const ContactCard = ({cards}) =>
                         <div className='card__links'>
                             {card?.data?.map(item => (
                                 <a 
-                                    className={`card__link ${item.linkTitle.includes("El Sheikh Zaid") ? "card__link--nohover" : ""}`}
+                                    className={`card__link ${item.type === "address" ? "card__link--nohover" : ""}`}
                                     href={item.href} 
                                     target="_blank" 
                                     rel='noreferrer' 
