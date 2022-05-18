@@ -7,10 +7,10 @@ import {BsTelephone} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai'
 import {IoLocationOutline} from 'react-icons/io5';
 
-import agencyPoster from '../assets/agencyPoster.jpg';
-import fashionPoster from '../assets/fashionPoster.avif';
-import san3aPoster from '../assets/san3aPoster.avif';
-import brandsPoster from '../assets/brandsPoster.jpg';
+import agencyPoster from '../assets/agencyPoster.png';
+import fashionPoster from '../assets/fashionPoster.png';
+import san3aPoster from '../assets/san3aPoster.png';
+import brandsPoster from '../assets/brandsPoster.png';
 import * as yup from 'yup';
 
 

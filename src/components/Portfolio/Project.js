@@ -12,6 +12,7 @@ const Project = (props) =>
     const {poster, videoURL, liveURL, githubURL, title, description} = props;
 
     return (
+        // css file: components/project
         <div className='project'>
             <div className='project__image--container'>
                 <img className='project__image' src={poster} alt='project'/>
