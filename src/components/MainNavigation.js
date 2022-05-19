@@ -17,28 +17,37 @@ const MainNavigation = () =>
 
     return (
         // css file: layouts/navigation
-        <div className='navigation'>
-            <div className='navigation__image--container'>
-                <img className='navigation__image' src={navImage} alt="Navigation"/>
-            </div>
+        <React.Fragment>
+            <input className='navigation__input' id='navigation__icon--input' type="checkbox" />
+            <label className='navigation__button' htmlFor='navigation__icon--input'>
+                <span className='navigation__button--text'></span>
+            </label>
 
-            <ul className='navigation__list'>
-                {mainNavigationItems.map(item => (
-                    <li key={item.title} onClick={() => setSeletedItem(item.id)}>
-                        <NavLink  
-                            className={`navigation__item ${item.id === selectedItem ? "navigation__item--selected" : ''}`} 
-                            to={item.to}
-                        >
-                            {item.title}
-                        </NavLink>
-                    </li>
-                ))}
-            </ul>
+            <nav className='navigation'>
 
-            <div className='navigation__footer'>
-                &copy; 2022 by <span className='navigation__footer--bold'>AbdallahWahbah</span>
-            </div>
-        </div>
+                <div className='navigation__image--container'>
+                    <img className='navigation__image' src={navImage} alt="Navigation"/>
+                </div>
+
+                <ul className='navigation__list'>
+                    {mainNavigationItems.map(item => (
+                        <li key={item.title} onClick={() => setSeletedItem(item.id)}>
+                            <NavLink  
+                                className={`navigation__item ${item.id === selectedItem ? "navigation__item--selected" : ''}`} 
+                                to={item.to}
+                            >
+                                {item.title}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+
+                <div className='navigation__footer'>
+                    &copy; 2022 by <span className='navigation__footer--bold'>AbdallahWahbah</span>
+                </div>
+                </nav>
+
+        </React.Fragment>
     )
 }
 

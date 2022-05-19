@@ -1,18 +1,15 @@
-// // example of animation .. you need to add the animate.css link, then go to the index.js and see the first 2 lines
-// // .js__href{opacity: 0;margin-top: 10rem;}
-// // .js__href.animate__animated{opacity: 1;}
-
-// // for animations
-// .section__numbers{opacity: 0;}
-// .section__numbers.animate__animated{opacity: 1;}
-
 h1{margin-bottom: 0 !important;}
 .home, .about, .resume, .portfolio, .contact
 {
     padding: 11rem 1.5rem;
-    margin-left: 17%;
+    margin-left: 26rem;
     background-color: $color-section-background;
     overflow: hidden !important;
+
+    @include respond(tab-land)
+    {
+        margin-left: 0;
+    }
 }
 
 .contact__container
