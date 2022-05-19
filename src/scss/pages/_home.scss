@@ -9,6 +9,17 @@ h1{margin-bottom: 0 !important;}
     @include respond(tab-land)
     {
         margin-left: 0;
+        padding: 11rem 14rem;
+    }
+
+    @include respond(tab-port)
+    {
+        padding: 11rem 13rem;
+    }
+
+    @include respond(phone)
+    {
+        padding: 11rem 9rem;
     }
 }
 
@@ -60,6 +71,17 @@ h1{margin-bottom: 0 !important;}
         text-align: center;
         letter-spacing: 1px;
         margin-bottom: 4rem;
+
+        @include respond(tab-port)
+        {
+            font-size: 2rem;
+        }
+
+        @include respond(phone)
+        {
+            font-size: 1.9rem;
+            width: 90%;
+        }
     }
     .social__media
     {

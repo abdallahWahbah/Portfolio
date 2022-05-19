@@ -12,15 +12,47 @@
 {
     font-weight: 700;
     font-size: 5rem;
+
+    @include respond(phone)
+    {
+        font-size: 4.3rem;
+        text-align: center;
+        &--sub{display: block;}
+        .ityped-cursor{display: none;}
+    }
 }
 .heading__secondary // used in About section
 {
     font-weight: 600;
     font-size: 3rem;
+
+    @include respond(tab-land)
+    {
+        font-size: 3.1rem;
+    }
+    @include respond(phone)
+    {
+        content-visibility: 2.8rem;
+    }
+    @media only screen and (max-width: 27.5em) // < 440px
+    {
+        &--sub{display: block;}
+    }
+
 }
 .main__paragraph // used in About section
 {
     font-size: 1.8rem;
+
+    @include respond(tab-port)
+    {
+        font-size: 2.1rem;
+    }
+
+    @include respond(phone)
+    {
+        font-size: 2rem;
+    }
 }
 
 .main__button
@@ -36,6 +68,12 @@
     display: inline-block;
     cursor: pointer;
     position: relative;
+
+    @include respond(phone)
+    {
+        padding: 1.2rem 3rem;
+        font-size: 1.4rem;
+    }
 
     &::before
     {
@@ -65,6 +103,16 @@
         font-size: 4.1rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include respond(tab-port)
+        {
+            font-size: 3.7rem;
+        }
+
+        @include respond(phone)
+        {
+            font-size: 3.4rem;
+        }
     }
     &--line
     {
@@ -95,5 +143,17 @@
         font-weight: 800;
         letter-spacing: 1px;
         color: $color-section-header-background;
+
+        @include respond(tab-port)
+        {
+            font-size: 6rem;
+            margin-top: -4.2rem;
+        }
+
+        @include respond(phone)
+        {
+            font-size: 4.5rem;
+            margin-top: -3.3rem;
+        }
     }
 }

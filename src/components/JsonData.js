@@ -89,10 +89,6 @@ export const aboutListItems =
         key: "Birthday",
         value: "22-03-1998"
     },
-    {
-        key: "Marital Status",
-        value: "Single"
-    },
 ]
 
 //  Resume Component

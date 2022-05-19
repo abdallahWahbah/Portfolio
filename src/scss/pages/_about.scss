@@ -5,9 +5,13 @@
         display: flex;
         align-items: center;
 
+        @include respond(tab-port){flex-wrap: wrap;}
+
         & > *
         {
             flex-basis: 50%;
+
+            @include respond(tab-port){flex-basis: 100%;}
         }
     }
 
@@ -15,32 +19,49 @@
     {
         position: relative;
         margin-right: 2rem;
-        height: 64rem;
+
+        @include respond(tab-land)
+        {
+            flex-basis: 58%;
+        }
+
+        @include respond(tab-port)
+        {
+            margin: 0 auto;
+            flex-basis: 100%;
+        }
+
+        &::before,
+        &::after
+        {
+            content: "";
+            position: absolute;
+            height: 60%;
+            width: 2rem;
+            background-color: $color-primary-light-2;
+            z-index: 111;
+
+            @include respond(phone)
+            {
+                width: 4%;
+            }
+        }
+
+        &::before
+        {
+            top: 0;
+            left: 0;
+        }
+        &::after
+        {
+            bottom: 5px;
+            right: 0;
+        }
     }
     &__image
     {
-        height: 100%;
         width: 100%;
-    }
-    &__image--border-left
-    {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 60%;
-        width: 2rem;
-        background-color: $color-primary-light-2;
-        z-index: 111;
-    }
-    &__image--border-right
-    {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 60%;
-        width: 2rem;
-        background-color: $color-primary-light-2;
-        z-index: 111;
+        height:auto;
     }
 
     &__details
@@ -48,6 +69,15 @@
         & > *:not(:last-child)
         {
             margin-bottom: 1.5rem;
+
+            @include respond(tab-land)
+            {
+                margin-bottom: 1.2rem;
+            }
+            @include respond(tab-port)
+            {
+                margin-bottom: 1.7rem;
+            }
         }
     }
 
@@ -61,17 +91,46 @@
         font-size: 1.9rem;
         display: flex;
 
+        @include respond(tab-land)
+        {
+            font-size: 1.9rem;
+        }
+
+        @include respond(tab-port)
+        {
+            font-size: 2rem;
+        }
+
+        @include respond(phone){font-size: 1.9rem;}
+
         &--key
         {
             font-weight: 700;
-            flex-basis: 22%;
+            flex-basis: 25%;
             position: relative;
 
+            @include respond(tab-land)
+            {
+                flex-basis: 31%;
+            }
+            @include respond(tab-port)
+            {
+                flex-basis: 22%;
+            }
+            @media only screen and (max-width: 690px){flex-basis: 27%;}
+            @include respond(phone){flex-basis: 15rem;}
             &::after
             {
                 content: ":\00a0";
                 position: absolute;
                 right: 0;
+            }
+        }
+        &--value
+        {
+            @include respond(phone)
+            {
+                flex-basis: 50%;
             }
         }
     }

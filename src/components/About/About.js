@@ -14,8 +14,6 @@ const About = () =>
 
             <div className='about__details--container'>
                 <div className='about__image--container'>
-                    <span className='about__image--border-right'/>
-                    <span className='about__image--border-left'/>
                     <img className='about__image' src={aboutImage} alt="portfolio"/>
                 </div>
                 <div className='about__details'>
