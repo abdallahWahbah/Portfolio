@@ -6,11 +6,6 @@ import {GoBook} from 'react-icons/go';
 import {BsTelephone} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai'
 import {IoLocationOutline} from 'react-icons/io5';
-
-import agencyPoster from '../assets/agencyPoster.png';
-import fashionPoster from '../assets/fashionPoster.png';
-import san3aPoster from '../assets/san3aPoster.png';
-import brandsPoster from '../assets/brandsPoster.png';
 import * as yup from 'yup';
 
 
@@ -178,34 +173,38 @@ export const educationTimeline =
 export const projects =
 [
     {
-        poster: agencyPoster,
+        // poster: agencyPoster,
+        title: "Agency template",
+        description: "A landing page made using HTML5, CSS3, SASS and JS",
+        linkedinURL: "https://www.linkedin.com/posts/abdallah-wahbah_hello-everybody-i-tried-to-imitate-a-landing-activity-6851252417552621568-aQ2P?utm_source=linkedin_share&utm_medium=member_desktop_web",
         videoURL: "https://www.youtube.com/embed/WVEHZPI9tG4",
         liveURL: "https://agency-wahbah.netlify.app/",
         githubURL: "https://github.com/abdallahWahbah/Agency",
-        title: "Agency template",
-        description: "A landing page made using HTML5, CSS3, SASS and JS"
     },
     {
-        poster: fashionPoster,
+        // poster: fashionPoster,
+        title: "Fashion template",
+        description: "Imitating landing page using HTML5, CSS3, SASS and JS",
+        linkedinURL: "https://www.linkedin.com/posts/abdallah-wahbah_a-landing-page-using-html-css-js-and-some-activity-6852685246907990016-2iiY?utm_source=linkedin_share&utm_medium=member_desktop_web",
         videoURL: "https://www.youtube.com/embed/lL-1FranDDo",
         liveURL: "https://fashion-wahbah.netlify.app/",
         githubURL: "https://github.com/abdallahWahbah/Fashion",
-        title: "Fashion template",
-        description: "Imitating landing page using HTML5, CSS3, SASS and JS"
     },
     {
-        poster: san3aPoster,
+        // poster: san3aPoster,
+        title: "San3a website",
+        description: "A 13-page e-commerce website made using HTML, CSS, SASS, JS , MVC pattern and AXIOS",
+        linkedinURL: "https://www.linkedin.com/posts/abdallah-wahbah_san3a-project-a-13-page-e-commerce-website-activity-6860633887559811072-LbCg?utm_source=linkedin_share&utm_medium=member_desktop_web",
         videoURL: "https://www.youtube.com/embed/ErrlFSpbIV8",
         githubURL: "https://github.com/abdallahWahbah/San3a-New-Version",
-        title: "San3a website",
-        description: "A 13-page e-commerce website made using HTML, CSS, SASS, JS , MVC pattern and AXIOS"
     },
     {
-        poster: brandsPoster,
+        // poster: brandsPoster,
+        title: "Brands",
+        description: `CRUD operations using React, Routing, Redux Toolkit, MUI, Formik and Expressjs with Mongodb`,
+        linkedinURL: "https://www.linkedin.com/posts/abdallah-wahbah_practicing-crud-operations-in-react-routing-activity-6909139877238353920-u873?utm_source=linkedin_share&utm_medium=member_desktop_web",
         videoURL: "https://www.youtube.com/embed/7znVD9jUnr0",
         githubURL: "https://github.com/abdallahWahbah/Brands",
-        title: "Brands",
-        description: `CRUD operations using React, Routing, Redux Toolkit, MUI, Formik and Expressjs with Mongodb`
     },
     
 ]

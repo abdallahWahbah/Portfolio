@@ -83,60 +83,60 @@ h1{margin-bottom: 0 !important;}
             width: 90%;
         }
     }
-    .social__media
+}
+.social__media // related to home and portfolio icons
+{
+    &--list
     {
-        &--list
-        {
-            list-style: none;
-        
-            display: flex;
+        list-style: none;
+    
+        display: flex;
 
-            & > *:not(:last-child)
-            {
-                margin-right: 6.5rem;
-            }
-        }
-        &--item
+        & > *:not(:last-child)
         {
-            font-size: 2.5rem;
-            position: relative;
-            cursor: pointer;
+            margin-right: 6.5rem;
         }
-
-        &--item:hover .social__media--border
-        {
-            border: 2px solid $color-primary-hover;
-        }
-
-        &--item:hover .social__media--link
-        {
-            color: $color-primary-hover
-        }
-
-        &--border
-        {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            border: 2px solid $color-navigation-border;
-            width: 5rem;
-            height: 5rem;
-            transition: all .5s ease-in-out;
-        }
-        &--link
-        {
-            color: inherit;
-            transition: all .5s ease-in-out;
-        }
-        &--icon
-        {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
     }
+    &--item
+    {
+        font-size: 2.5rem;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &--item:hover .social__media--border
+    {
+        border: 2px solid $color-primary-hover;
+    }
+
+    &--item:hover .social__media--link
+    {
+        color: $color-primary-hover
+    }
+
+    &--border
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 2px solid $color-navigation-border;
+        width: 5rem;
+        height: 5rem;
+        transition: all .5s ease-in-out;
+    }
+    &--link
+    {
+        color: inherit;
+        transition: all .5s ease-in-out;
+    }
+    &--icon
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }

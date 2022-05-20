@@ -9,32 +9,42 @@ const Project = (props) =>
 {
     const [showVideo, setShowVideo] = useState(false)
 
-    const {poster, videoURL, liveURL, githubURL, title, description} = props;
+    const {linkedinURL, videoURL, liveURL, githubURL, title, description} = props;
 
     return (
         // css file: components/project
         <div className='project'>
-            <div className='project__image--container'>
-                <img className='project__image' src={poster} alt='project'/>
-                <div className='project__hover'>
-                    <div className='project__icons'>
-                        <div className='project__icon' onClick={() => setShowVideo(true)}>
-                            <TiMediaPlayOutline />
-                        </div>
-                        {liveURL && (
-                            <div className='project__icon'  onClick={() =>  window.open(liveURL, '_blank')}>
-                                <BsEyeFill/>
-                            </div>
-                        )}
-                        <div className='project__icon'  onClick={() =>  window.open(githubURL, '_blank')}>
-                            <FiCode/>
-                        </div>
-                    </div>
-                </div>
+
+            <div className='project__details--container'>
+                <h3 className='project__title'>{title}</h3>
+                <p className='project__description'>{description}</p>
+                <a className='main__button' href={linkedinURL} target="_blank" rel='noreferrer' >
+                    Linkedin Post
+                </a>
             </div>
 
-            <h3 className='project__title'>{title}</h3>
-            <p className='project__description'>{description}</p>
+            <div className='project__icons'>
+                <ul className='social__media--list'>
+                     <li className='social__media--item' onClick={() => setShowVideo(true)}>
+                        <div className='social__media--border'></div>
+                        <span className='social__media--link'>
+                            <TiMediaPlayOutline  className='social__media--icon'/>
+                        </span>
+                    </li> 
+                    <li className='social__media--item'>
+                        <div className='social__media--border'></div>
+                        <a className='social__media--link' href={liveURL} target="_blank" rel="noreferrer">
+                            <BsEyeFill  className='social__media--icon'/>
+                        </a>
+                    </li>
+                    <li className='social__media--item'>
+                        <div className='social__media--border'></div>
+                        <a className='social__media--link' href={githubURL} target="_blank" rel="noreferrer">
+                            <FiCode  className='social__media--icon'/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
             {showVideo && (
                 <PopUp 

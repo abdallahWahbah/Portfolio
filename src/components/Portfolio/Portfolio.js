@@ -11,11 +11,11 @@ const Portfolio = () =>
         <div className='portfolio'>
             <Header title="Portfolios"/>
 
-            <div className='project__container'>
+            <div className='projects'>
                 {projects.map(item => (
                     <Project 
                         key={item.title}
-                        poster={item.poster}
+                        linkedinURL={item.linkedinURL}
                         videoURL={item.videoURL}
                         liveURL={item.liveURL}
                         githubURL={item.githubURL}
