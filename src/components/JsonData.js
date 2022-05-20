@@ -134,8 +134,8 @@ export const workTimeline =
             role: "Software Engineer",
             company: "Inspire for solutions development",
             date: "7/2020 – 9/2020",
-            description: `It was a 150 hour training at which we learned: HTML5 & CSS3, Bootstrap, jQuery, Javascript, ES6 and React
-            It was a 150 hour training at which we learned: HTML5 & CSS3, Bootstrap, jQuery, Javascript, ES6 and React`
+            description: "I started learning React from scratch with my team lead, then learned about some libraries such as: Redux, Routing, Formik, Wizard form with formik ityped, MUI ....etc. \n" 
+                        +"\nThen joined the development team"
         },
         {
             role: "Frontend Web Training",

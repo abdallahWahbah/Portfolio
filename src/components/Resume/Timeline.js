@@ -18,7 +18,7 @@ const Timeline = ({workTimeline}) =>
                         <div className='timeline__item--details'>
                             <h2 className='timeline__item--role'>{item.role}</h2>
                             <h4 className='timeline__item--company'>{item.company}</h4>
-                            <h6 className='timeline__item--description'>{item.description}</h6>
+                            <h6 className='timeline__item--description'>{item.description.split('\n').map(str => <p key={str}>{str}</p>)}</h6>
                         </div>
                     </li>
                 ))}
