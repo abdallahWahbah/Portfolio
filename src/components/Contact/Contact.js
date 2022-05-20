@@ -8,7 +8,7 @@ import ContactForm from './ContactForm'
 const Contact = () => 
 {
     return (
-        //css files: page/home, base/typography, components/card
+        //css files: page/home, base/typography, components/card, form
         <div className='contact'>
             <Header title="Contact Me"/>
 

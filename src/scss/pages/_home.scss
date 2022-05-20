@@ -27,9 +27,16 @@ h1{margin-bottom: 0 !important;}
 {
     display: flex;
 
+    @include respond(tab-port){flex-wrap: wrap;}
+
     & > *
     {
         flex-basis: 50%;
+
+        @include respond(tab-port)
+        {
+            flex-basis: 100%;
+        }
     }
 }
 

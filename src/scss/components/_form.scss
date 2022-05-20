@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
 
+    @include respond(tab-port){margin-bottom: 4rem;}
+
     & > *:not(:last-of-type)
     {
         margin-bottom: 3rem; 
@@ -54,5 +56,12 @@
         // font-size: 1.6rem;
         // margin-left: 3rem; // to be under label : (padding + margin ) of the label
         // margin-top: 1rem;
+    }
+    .main__button
+    {
+        @include respond(phone)
+        {
+            align-self: flex-start;
+        }
     }
 }
