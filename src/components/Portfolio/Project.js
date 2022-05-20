@@ -31,12 +31,14 @@ const Project = (props) =>
                             <TiMediaPlayOutline  className='social__media--icon'/>
                         </span>
                     </li> 
-                    <li className='social__media--item'>
-                        <div className='social__media--border'></div>
-                        <a className='social__media--link' href={liveURL} target="_blank" rel="noreferrer">
-                            <BsEyeFill  className='social__media--icon'/>
-                        </a>
-                    </li>
+                    {liveURL && (
+                        <li className='social__media--item'>
+                            <div className='social__media--border'></div>
+                            <a className='social__media--link' href={liveURL} target="_blank" rel="noreferrer">
+                                <BsEyeFill  className='social__media--icon'/>
+                            </a>
+                        </li>
+                    )}
                     <li className='social__media--item'>
                         <div className='social__media--border'></div>
                         <a className='social__media--link' href={githubURL} target="_blank" rel="noreferrer">

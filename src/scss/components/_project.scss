@@ -4,6 +4,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+
+    @include respond(tab-port)
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    // @include respond(phone)
 }
 
 .project
@@ -14,10 +22,29 @@
     height: 43rem;
     border: .5rem solid $color-navigation-background;
     position: relative;
+
+    @include respond(tab-land)
+    {
+        flex-basis: 45%;
+    }
     
+    @include respond(tab-port)
+    {
+        flex-basis: 65%;
+    }
+
+    @include respond(phone)
+    {
+        flex-basis: 90%;
+    }
     &:hover > &__details--container
     {
         transform: translate(4.5rem, -7rem);
+
+        @include respond(tab-land)
+        {
+            transform: translate(0, 0);
+        }
     }
     &:hover > &__icons
     {
@@ -36,31 +63,49 @@
         background-image: linear-gradient(to right, $color-navigation-border 0%, $color-navigation-border 50%, $color-navigation-background 50%);
         box-shadow: 0 0 2rem rgba($color-navigation-background, .7);
         margin: 1rem;
-        padding: 1rem;
+        padding: 8rem 1rem ;
         text-align: center;
         transition: all .5s ease;
 
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
         z-index: 1;
 
         & > *:not(:last-child){margin-bottom: 1rem;}
+
+        @include respond(tab-land)
+        {
+            padding: 2rem 2rem;
+            margin: 2rem;
+            height: 75%;
+        }
+        // @include respond(tab-port){justify-content: center; padding: 0;}
+
+        @include respond(phone){padding: 0; padding-bottom: 1rem;}
     }
     &__title
     {
         font-size: 2.5rem;
         color: $color-white;
+
     }
     &__description
     {
         font-size: 1.7rem;
+        margin-bottom: 0 !important;
+        height: 10rem;
+
+        @include respond(phone)
+        {margin-top: -3rem;}
     }
     .main__button
     {
         font-size: 1.5rem;
         padding: 1rem;
+
+        @media only screen and (max-width: 350px){margin-bottom: -3rem;}
     }
     &__icons
     {
@@ -70,5 +115,12 @@
         transform: translate(-50%, -50%) scaleY(0);
         opacity: 0;
         transition: all .5s ease;
+
+        @include respond(tab-land)
+        {
+            transform: translate(-50%, -50%) scaleY(1);
+            opacity: 1;
+            left: 50%;
+        }
     }
 }
