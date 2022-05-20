@@ -12,6 +12,24 @@
     {
         flex-basis: 50%;
         margin-bottom: 2.7rem;
+
+        @include respond(tab-land)
+        {
+            flex-basis: 49%;
+            &:nth-of-type(odd)
+            {
+                margin-right: 1rem;
+            }
+        }
+
+        @include respond(tab-port)
+        {
+            flex-basis: 100%;
+            &:nth-of-type(odd)
+            {
+                margin-right: 0;
+            }
+        }
     }
 
     &__title
@@ -30,12 +48,16 @@
         font-size: 1.8rem;
         font-weight: 300;
         flex-basis: 10%;
+
+        @include respond(tab-land){flex-basis: 12%;}
     }
     &__line
     {
         position: relative;
-        height: .5rem;
+        height: .6rem;
         flex-basis: 85%;
+
+        @include respond(tab-port){height: .8rem;}
 
         &--background, &--above
         {
@@ -48,6 +70,7 @@
         {
             width: 100%;
             background-color: $color-navigation-border;
+
         }
         &--above
         {

@@ -14,12 +14,12 @@ h1{margin-bottom: 0 !important;}
 
     @include respond(tab-port)
     {
-        padding: 11rem 13rem;
+        padding: 11rem;
     }
 
     @include respond(phone)
     {
-        padding: 11rem 9rem;
+        padding: 11rem 5rem;
     }
 }
 

@@ -107,7 +107,7 @@ export const skills =
     },
     {
         title: "Javascript",
-        percentage: 75
+        percentage: 80
     },
     {
         title: "ReactJS",
@@ -164,7 +164,7 @@ export const educationTimeline =
             role: "High School",
             company: "Omar Ebn El-Khatab",
             date: "2013-2016",
-            description: "-Finished Schoold with percentage of 95.5%"
+            description: "-Finished School with percentage of 95.5%"
         },
     ]
 }
