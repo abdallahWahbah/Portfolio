@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {MdOutlineLightMode} from 'react-icons/md';
-import {MdOutlineDarkMode} from 'react-icons/md'
+import {MdDarkMode} from 'react-icons/md'
 
 const DarkMode = () => 
 {
@@ -24,7 +24,7 @@ const DarkMode = () =>
             {mode === "light" ? (
                 <MdOutlineLightMode onClick={toggle} className="light__icon" />
             ) : (
-                <MdOutlineDarkMode onClick={toggle} className="dark__icon" />
+                <MdDarkMode onClick={toggle} className="dark__icon" />
             )}
         </div>
     )
