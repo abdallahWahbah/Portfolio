@@ -1,0 +1,19 @@
+.darkmode__container
+{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1111111;
+}
+
+.light__icon, .dark__icon
+{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.light__icon
+{
+    color: yellow;
+}

@@ -10,7 +10,6 @@ const HomePage = () =>
 
     useEffect(() =>
     {
-        console.log(headingRef)
         init(headingRef.current, { 
             showCursor: true, 
             strings: ['Abdallah Wahbah'],
