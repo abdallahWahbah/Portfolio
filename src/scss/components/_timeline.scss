@@ -16,7 +16,7 @@
     &__header
     {
         font-size: 2.9rem;
-        color: $color-white;
+        color: var(--color-white);
     }
     &__list
     {
@@ -29,7 +29,7 @@
             top: 0;
             bottom: 0;
             width: .3rem;
-            background-color: $color-navigation-border;
+            background-color: var(--color-navigation-border);
         }
     }
 
@@ -57,8 +57,8 @@
             width: 1.4rem;
             border-radius: 50%;
             margin-top: 1.3rem;
-            border: 2px solid $color-navigation-border;
-            background-color: $color-section-background;
+            border: 2px solid var(--color-navigation-border);
+            background-color: var(--color-section-background);
             z-index: 11;
         }
         &--date
@@ -80,14 +80,14 @@
         }
         &--role
         {
-            color: $color-primary;
+            color: var(--color-primary);
             font-size: 2.3rem;
 
             @include respond(tab-port){font-size: 2.5rem;}
         }
         &--company
         {
-            color: $color-white;
+            color: var(--color-white);
             font-size: 1.8rem;
             font-weight: 400;
             letter-spacing: 1px;

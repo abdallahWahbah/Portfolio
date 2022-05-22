@@ -5,8 +5,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    border-right: 1px solid $color-navigation-border;
-    background: $color-navigation-background;
+    border-right: 1px solid var(--color-navigation-border);
+    background: var(--color-navigation-background);
     padding: 2rem 0;
     transform: translateX(0);
     transform-origin: left;
@@ -29,9 +29,9 @@
     &__button
     {
         margin-top: 2rem;
-        border: 1px solid $color-navigation-border;
+        border: 1px solid var(--color-navigation-border);
         border-left: none;
-        background-color: $color-navigation-background;
+        background-color: var(--color-navigation-background);
         z-index: 150;
         width: 5.5rem;
         height: 5.5rem;
@@ -58,7 +58,7 @@
             {
                 width: 100%;
                 height: 2px;
-                background-color: $color-main-font;
+                background-color: var(--color-main-font);
             }
 
             &::before, &::after
@@ -109,12 +109,12 @@
         width: 18rem;
         height: 19rem;
         border-radius: 50%;
-        border: 6px solid #2E344E;
+        border: 6px solid var(--color-navigation-border);
         box-sizing: content-box;
         
         &--container
         {
-            border-bottom: 1px solid $color-navigation-border;
+            border-bottom: 1px solid var(--color-navigation-border);
             text-align: center;
             padding-bottom: 2rem;
         }
@@ -144,7 +144,7 @@
         &--selected
         {
             background-color: $color-primary-hover;
-            color: $color-white !important;
+            color: var(--color-white) !important;
         }
 
         &:hover
@@ -186,7 +186,7 @@
         padding-top: 2rem;
         text-align: center;
         font-size: 1.5rem;
-        border-top: 1px solid $color-navigation-border;
+        border-top: 1px solid var(--color-navigation-border);
 
         &--bold
         {
@@ -197,7 +197,7 @@
 
 .ityped-cursor {
     animation: blink .8s infinite;
-    color: $color-primary;
+    color: var(--color-primary);
 }
 
 @keyframes blink {

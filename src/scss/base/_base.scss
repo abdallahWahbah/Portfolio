@@ -23,12 +23,55 @@ html
         font-size: 75%; // 12px
     }
 }
+:root
+{
+    --color-primary: #0d6efd;
+    --color-primary-light: rgba(#037fff, .2);
+    --color-primary-light-2: rgba(#037fff, .6);
+    --color-primary-hover: #037fff;
+
+    --color-section-header-background: #141722; // used also at at Resume, Skills
+
+    --color-main-font: #a4acc4;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-section-background: #10121B;
+    --color-navigation-background: #191D2B;
+    --color-navigation-border: #2e344e;
+
+    --color-gray-light-1: #dee2e6;
+    --color-gray-light-2: #ced4da;
+    --color-gray-light-3: #adb5bd;
+
+    --color-gray-dark-1: #777;
+    --color-gray-dark-2: #999;
+    --color-gray-dark-3: #333;
+}
 body
 {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    color: $color-main-font;
+    color: var(--color-main-font);
     line-height: 1.7;
     box-sizing: border-box;
-    background-color: $color-section-background;
+    background-color: var(--color-section-background);
+}
+
+body.dark
+{
+
+    --color-section-header-background: #E5E8EC; 
+
+    --color-main-font: #313131;
+
+    --color-white: #000; 
+    --color-black: #fff; 
+
+    --color-section-background: #F1F1F1;
+    --color-navigation-background: #E4E4E4; 
+    --color-navigation-border: #CBCED8;
+
+    .home__video--background{display: none;} 
 }

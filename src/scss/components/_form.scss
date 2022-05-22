@@ -25,7 +25,7 @@
         margin: 0 2rem;
         padding: 0 1rem;
         white-space: nowrap;
-        background-color: $color-section-background;
+        background-color: var(--color-section-background);
     }
     
     &__input
@@ -33,9 +33,9 @@
         width: 100%;
         background-color: transparent !important;
         padding: 1.6rem;
-        color: $color-main-font;
+        color: var(--color-main-font);
         font-size: 1.6rem;
-        border: 1px solid $color-navigation-border;
+        border: 1px solid var(--color-navigation-border);
         transition: all .5s ease;
 
         &.border__error.border__error
@@ -46,7 +46,7 @@
         &:focus
         {
             outline: none;
-            border: 1px solid $color-primary;
+            border: 1px solid var(--color-primary);
         }
     }
 
@@ -59,9 +59,6 @@
     }
     .main__button
     {
-        @include respond(phone)
-        {
-            align-self: flex-start;
-        }
+        align-self: flex-start;
     }
 }

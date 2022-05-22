@@ -20,7 +20,7 @@
     margin-bottom: 6rem;
     padding: 2rem;
     height: 43rem;
-    border: .5rem solid $color-navigation-background;
+    border: .5rem solid var(--color-navigation-background);
     position: relative;
 
     @include respond(tab-land)
@@ -60,8 +60,8 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: linear-gradient(to right, $color-navigation-border 0%, $color-navigation-border 50%, $color-navigation-background 50%);
-        box-shadow: 0 0 2rem rgba($color-navigation-background, .7);
+        background-image: linear-gradient(to right, var(--color-navigation-border) 0%, var(--color-navigation-border) 50%, var(--color-navigation-background) 50%);
+        box-shadow: 0 0 2rem rgba(var(--color-navigation-background), .7);
         margin: 1rem;
         padding: 8rem 1rem ;
         text-align: center;
@@ -88,7 +88,7 @@
     &__title
     {
         font-size: 2.5rem;
-        color: $color-white;
+        color: var(--color-white);
 
     }
     &__description

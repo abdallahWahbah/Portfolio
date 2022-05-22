@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
+import {MdOutlineLightMode} from 'react-icons/md';
 
 import HomePage from './Home/HomePage';
 import About from './About/About';
@@ -10,9 +11,20 @@ import MainNavigation from './MainNavigation';
 
 const App = () => 
 {
+    const [darkMode, setDarkMode] = useState(false);
+    const toggle = () =>
+    {
+        if(darkMode) document.body.classList.remove("dark")
+        else document.body.classList.add("dark")
+        setDarkMode(!darkMode)
+    }
     return (
         <React.Fragment>
-        
+            
+            <span>
+                <MdOutlineLightMode onClick={toggle} style={{position: "fixed", right: "0", top: "0", width: "100px", height: "100px", zIndex: "100000", color: "yellow"}}/>
+            </span>
+            
             <MainNavigation />
 
             <Routes>

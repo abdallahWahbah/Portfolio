@@ -34,7 +34,7 @@
 
     &__title
     {
-        color: white;
+        color: var(--color-white);
         font-size: 1.8rem;
         font-weight: 600;
     }
@@ -69,13 +69,13 @@
         &--background
         {
             width: 100%;
-            background-color: $color-navigation-border;
+            background-color: var(--color-navigation-border);
 
         }
         &--above
         {
             left: 0;
-            background-color: $color-primary;
+            background-color: var(--color-primary);
         }
     }
 }

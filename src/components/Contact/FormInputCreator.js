@@ -86,6 +86,7 @@ const FormInputCreator = ({jsonObject, formik}) => {
                     className='main__button' 
                     key={element.name}
                     type={element.type}
+                    style={{border: "none"}}
                 >
                     {element.label}
                 </button>

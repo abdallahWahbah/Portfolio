@@ -1,11 +1,11 @@
 .heading__primary, .heading__secondary
 {
     font-size: 5rem;
-    color: $color-white;
+    color: var(--color-white);
     
     &--sub
     {
-        color: $color-primary;
+        color: var(--color-primary);
     }
 }
 .heading__primary // used in Home section
@@ -59,10 +59,10 @@
 {
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-white;
+    color: white;
     font-size: 1.5rem;
     letter-spacing: 1px;
-    background-color: $color-primary;
+    background-color: var(--color-primary);
     padding: 1.5rem 3.5rem;
     margin-top: 2rem;
     display: inline-block;
@@ -83,7 +83,7 @@
         bottom: 0;
         left: 0;
         width: 0%;
-        background-color: $color-white;
+        background-color: white;
         transition: all .3s ease-out;
     }
     
@@ -96,7 +96,7 @@
 .section__header
 {
     // margin-bottom: 4rem;
-    color: $color-white;
+    color: var(--color-white);
     
     &--main
     {
@@ -131,7 +131,7 @@
             left: 0;
             width: 35%;
             height: 100%;
-            background-color: $color-primary;
+            background-color: var(--color-primary);
             border-radius: 1rem;
         }
     }
@@ -142,7 +142,7 @@
         text-transform: uppercase;
         font-weight: 800;
         letter-spacing: 1px;
-        color: $color-section-header-background;
+        color: var(--color-section-header-background);
 
         @include respond(tab-port)
         {
