@@ -4,7 +4,6 @@ import aboutImage from '../../assets/main.jpg'
 import CV from '../../assets/cv.pdf'
 import { aboutListItems } from '../JsonData'
 import Header from '../Header'
-
 const About = () => 
 {
     return (
