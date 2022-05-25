@@ -71,12 +71,12 @@
         }
         &--details
         {
-            flex-basis: 80%;
+            flex-basis: 70%;
 
             display: flex;
             flex-direction: column;
 
-            @include respond(tab-port){flex-basis: 100%;}
+            @include respond(tab-land){flex-basis: 100%;}
         }
         &--role
         {
