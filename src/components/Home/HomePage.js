@@ -37,7 +37,6 @@ const HomePage = () =>
                 <ul className='social__media--list'>
                     {socialMediaData.map(item => (
                         <li className='social__media--item' key={item.href}>
-                            <div className='social__media--border'></div>
                             <a href={item.href} target="_blank" rel="noreferrer" className='social__media--link'>
                                 {item.icon}
                             </a>
