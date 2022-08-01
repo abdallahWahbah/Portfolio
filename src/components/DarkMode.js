@@ -4,24 +4,24 @@ import {MdDarkMode} from 'react-icons/md'
 
 const DarkMode = () => 
 {
-    const [mode, setMode] = useState("light");
+    const [mode, setMode] = useState("dark");
 
     const toggle = () =>
     {
-        if(mode === "light")
+        if(mode === "dark")
         {
-            document.body.classList.add("dark")
-            setMode("dark")
+            document.body.classList.add("light")
+            setMode("light")
         } 
         else 
         {
-            document.body.classList.remove("dark")
-            setMode("light")
+            document.body.classList.remove("light")
+            setMode("dark")
         }
     }
     return (
         <div className='darkmode__container'>
-            {mode === "light" ? (
+            {mode === "dark" ? (
                 <MdOutlineLightMode onClick={toggle} className="light__icon" />
             ) : (
                 <MdDarkMode onClick={toggle} className="dark__icon" />
