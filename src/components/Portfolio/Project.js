@@ -25,24 +25,21 @@ const Project = (props) =>
 
             <div className='project__icons'>
                 <ul className='social__media--list'>
-                     <li className='social__media--item' onClick={() => setShowVideo(true)}>
-                        <div className='social__media--border'></div>
+                    <li className='social__media--item' onClick={() => setShowVideo(true)}>
                         <span className='social__media--link'>
-                            <TiMediaPlayOutline  className='social__media--icon'/>
+                            <TiMediaPlayOutline/>
                         </span>
                     </li> 
                     {liveURL && (
                         <li className='social__media--item'>
-                            <div className='social__media--border'></div>
-                            <a className='social__media--link' href={liveURL} target="_blank" rel="noreferrer">
-                                <BsEyeFill  className='social__media--icon'/>
+                            <a href={liveURL} target="_blank" rel="noreferrer" className='social__media--link'>
+                                <BsEyeFill />
                             </a>
                         </li>
                     )}
                     <li className='social__media--item'>
-                        <div className='social__media--border'></div>
-                        <a className='social__media--link' href={githubURL} target="_blank" rel="noreferrer">
-                            <FiCode  className='social__media--icon'/>
+                        <a href={githubURL} target="_blank" rel="noreferrer" className='social__media--link'>
+                            <FiCode />
                         </a>
                     </li>
                 </ul>
