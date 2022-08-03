@@ -68,6 +68,11 @@ const ContactForm = () =>
                     messageData={messagePassed ? messageData.passed : messageData.failed}
                 />
             )}
+            {/* <PopUp 
+                onClose={() => setShowMessage(false)}
+                type="message" 
+                messageData={messagePassed ? messageData.passed : messageData.passed}
+            /> */}
         </form>
     )
 }

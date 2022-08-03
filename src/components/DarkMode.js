@@ -20,6 +20,7 @@ const DarkMode = () =>
         }
     }
     return (
+        // CSS file: base/base(body),  components/mode_button
         <div className='darkmode__container'>
             {mode === "dark" ? (
                 <MdOutlineLightMode onClick={toggle} className="light__icon" />

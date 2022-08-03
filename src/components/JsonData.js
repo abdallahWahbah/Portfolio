@@ -274,7 +274,7 @@ export const ContactSchema =
         type: "text",
         label: "Enter your name*",
         initialValue: "",
-        validator: yup.string().min(7).required("Name is required")
+        validator: yup.string().min(4).required("Name is required")
     },
     {
         name: "email",

@@ -48,6 +48,10 @@ html
     --color-gray-dark-1: #777;
     --color-gray-dark-2: #999;
     --color-gray-dark-3: #333;
+
+    --color-popup: #333;
+    --color-popup-content-background: #4b0909;
+    
 }
 body
 {
@@ -72,6 +76,9 @@ body.light
     --color-section-background: #F1F1F1;
     --color-navigation-background: #E4E4E4; 
     --color-navigation-border: #CBCED8;
+
+    --color-popup: rgb(115, 111, 111);
+    // --color-popup-content-background: #7c7979;
 
     .home__video--background{display: none;} 
 }
