@@ -27,7 +27,7 @@ const About = () =>
                         {aboutListItems.map(item => (
                             <li className='about__item' key={item.key}>
                                 <span className='about__item--key'>{item.key}</span> 
-                                <span className='about__item--value'>{item.value}</span> 
+                                <div className='about__item--value'>{item.value}</div> 
                             </li>
                         ))}
                     </ul>

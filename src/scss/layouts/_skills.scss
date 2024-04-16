@@ -5,77 +5,103 @@
 
     display: flex;
     flex-wrap: wrap;
+    gap: 2%;
 }
+// .skill
+// {
+//     &__item
+//     {
+//         flex-basis: 50%;
+//         margin-bottom: 2.7rem;
+
+//         @include respond(tab-land)
+//         {
+//             flex-basis: 49%;
+//             &:nth-of-type(odd)
+//             {
+//                 margin-right: 1rem;
+//             }
+//         }
+
+//         @include respond(tab-port)
+//         {
+//             flex-basis: 100%;
+//             &:nth-of-type(odd)
+//             {
+//                 margin-right: 0;
+//             }
+//         }
+//     }
+
+//     &__title
+//     {
+//         color: var(--color-white);
+//         font-size: 1.8rem;
+//         font-weight: 600;
+//     }
+//     &__percentage--container
+//     {
+//         display: flex;
+//         align-items: center;
+//     }
+//     &__percentage
+//     {
+//         font-size: 1.8rem;
+//         font-weight: 300;
+//         flex-basis: 10%;
+
+//         @include respond(tab-land){flex-basis: 12%;}
+//     }
+//     &__line
+//     {
+//         position: relative;
+//         height: .6rem;
+//         flex-basis: 85%;
+
+//         @include respond(tab-port){height: .8rem;}
+
+//         &--background, &--above
+//         {
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//             height: 100%
+//         }
+//         &--background
+//         {
+//             width: 100%;
+//             background-color: var(--color-navigation-border);
+
+//         }
+//         &--above
+//         {
+//             left: 0;
+//             background-color: var(--color-primary);
+//         }
+//     }
+// }
+
 .skill
 {
     &__item
     {
-        flex-basis: 50%;
-        margin-bottom: 2.7rem;
-
-        @include respond(tab-land)
-        {
-            flex-basis: 49%;
-            &:nth-of-type(odd)
-            {
-                margin-right: 1rem;
-            }
-        }
-
-        @include respond(tab-port)
-        {
-            flex-basis: 100%;
-            &:nth-of-type(odd)
-            {
-                margin-right: 0;
-            }
-        }
-    }
-
-    &__title
-    {
-        color: var(--color-white);
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-    &__percentage--container
-    {
+        flex-basis: 15%;
+        background-color: var(--color-navigation-border);
+        
         display: flex;
         align-items: center;
+        justify-content: center;
+        height: 15rem;
+        
+        &:not(:last-of-type)
+        {
+            margin-bottom: 2rem;
+        }
     }
-    &__percentage
+
+    &__image
     {
-        font-size: 1.8rem;
-        font-weight: 300;
-        flex-basis: 10%;
-
-        @include respond(tab-land){flex-basis: 12%;}
-    }
-    &__line
-    {
-        position: relative;
-        height: .6rem;
-        flex-basis: 85%;
-
-        @include respond(tab-port){height: .8rem;}
-
-        &--background, &--above
-        {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%
-        }
-        &--background
-        {
-            width: 100%;
-            background-color: var(--color-navigation-border);
-
-        }
-        &--above
-        {
-            left: 0;
-            background-color: var(--color-primary);
-        }
+        width: 50%;
+        // height: 70%;
     }
 }

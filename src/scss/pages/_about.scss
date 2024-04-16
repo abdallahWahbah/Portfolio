@@ -106,31 +106,43 @@
         &--key
         {
             font-weight: 700;
-            flex-basis: 25%;
-            position: relative;
+            flex-basis: 38%;
+            // position: relative;
 
             @include respond(tab-land)
             {
-                flex-basis: 31%;
+                flex-basis: 44%;
             }
+            @media only screen and (max-width: 1100px){flex-basis: 34% !important;}
+            @media only screen and (max-width: 980px){flex-basis: 37% !important;}
             @include respond(tab-port)
             {
-                flex-basis: 22%;
+                flex-basis: 33%;
             }
-            @media only screen and (max-width: 690px){flex-basis: 27%;}
-            @include respond(phone){flex-basis: 15rem;}
-            &::after
-            {
-                content: ":\00a0";
-                position: absolute;
-                right: 0;
-            }
+            @media only screen and (max-width: 690px){flex-basis: 35%;}
+            @include respond(phone){flex-basis: 45%;}
+            // &::after
+            // {
+            //     content: ":\00a0";
+            //     position: absolute;
+            //     right: 0;
+            // }
         }
         &--value
         {
+            flex-basis: 63%;
+            position: relative;
             @include respond(phone)
             {
                 flex-basis: 50%;
+            }
+            &::before
+            {
+                font-weight: 700;
+                content: ":\00a0";
+                position: absolute;
+                left: 0;
+                margin-left: -20px;
             }
         }
     }

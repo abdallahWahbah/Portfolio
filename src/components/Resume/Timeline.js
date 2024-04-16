@@ -18,7 +18,19 @@ const Timeline = ({workTimeline}) =>
                         <div className='timeline__item--details'>
                             <h2 className='timeline__item--role'>{item.role}</h2>
                             <h4 className='timeline__item--company'>{item.company}</h4>
-                            <h6 className='timeline__item--description'>{item.description.split('\n').map(str => <p key={str}>{str}</p>)}</h6>
+                            {/* <h6 className='timeline__item--description'>{item.description.split('\n').map(str => <p key={str}>{str}</p>)}</h6> */}
+                            {item.description.head && (
+                                <h6 className='timeline__item--description-common'>{item.description.head}</h6>  
+                            )}
+                              
+                            {item.description.list.map(listItem => (
+                                <div className='timeline__item--description-listContainer' key={listItem}>
+                                    <span className='timeline__item--description-common timeline__item--description-dash'>-</span>
+                                    <span className=' timeline__item--description-common'>
+                                        {listItem}
+                                    </span> 
+                                </div>
+                            ))}
                         </div>
                     </li>
                 ))}

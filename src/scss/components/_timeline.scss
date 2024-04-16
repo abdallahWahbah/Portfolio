@@ -97,9 +97,21 @@
         }
         &--description
         {
-            font-weight: 400;
-            font-size: 1.7rem;
-            margin-bottom:2.5rem;   
+            &-common
+            {
+                font-weight: 400;
+                font-size: 1.7rem;
+                margin-bottom:1rem;  
+            }
+            &-listContainer
+            {
+                display: flex;
+                margin-left: 1rem;
+            }
+            &-dash
+            {
+                margin-right: 1rem;
+            }
 
             @include respond(tab-port){font-size: 1.9rem;}
         }

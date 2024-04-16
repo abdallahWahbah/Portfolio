@@ -66,7 +66,7 @@ export const aboutListItems =
     },
     {
         key: "Age",
-        value: 24
+        value: 26
     },
     {
         key: "Nationality",
@@ -77,12 +77,12 @@ export const aboutListItems =
         value: "Arabic, English"
     },
     {
-        key: "Address",
+        key: "Location",
         value: "El Sheikh Zaid, Al Jizah, Egypt"
     },
     {
-        key: "Birthday",
-        value: "22-03-1998"
+        key: "Current Location",
+        value: "Riyadh, Saudi Arabia"
     },
 ]
 
@@ -91,35 +91,71 @@ export const skills =
 [
     {
         title: "HTML5",
-        percentage: 95
+        image: "/skills/html5.png",
     },
     {
         title: "CSS3",
-        percentage: 90
+        image: "/skills/css3.webp",
     },
     {
         title: "SASS",
-        percentage: 95
+        image: "skills/sass.svg",
     },
     {
         title: "Reponsive design",
-        percentage: 95
+        image: "skills/responsiveDesgin.svg",
     },
     {
-        title: "Javascript",
-        percentage: 80
+        title: "JavaScript",
+        image: "skills/JS.svg",
+    },
+    {
+        title: "ES6",
+        image: "skills/es6.svg",
+    },
+    {
+        title: "Axios",
+        image: "skills/axios.png",
     },
     {
         title: "ReactJS",
-        percentage: 80
+        image: "skills/reactImage.png",
+    },
+    {
+        title: "Reach Hooks",
+        image: "skills/reactHooks.png",
     },
     {
         title: "Redux",
-        percentage: 80
+        image: "skills/redux.png",
+    },
+    // {
+    //     title: "Context",
+    //     image: "skills/context.png",
+    // },
+    {
+        title: "Next.js",
+        image: "skills/next.webp",
     },
     {
         title: "Git & Github",
-        percentage: 80
+        image: "skills/git.png",
+    },
+    {
+        title: "MUI",
+        image: "skills/mui.png",
+    },
+    {
+        title: "Formik",
+        image: "skills/formik.png",
+    },
+    {
+        title: "Formik Wizard",
+        image: "skills/formikWizard.png",
+    },
+    {
+        title: "DSA",
+        image: "skills/dsa.png",
     },
     
 ]
@@ -131,17 +167,33 @@ export const workTimeline =
     data: 
     [
         {
-            role: "Software Engineer",
+            role: "Front end developer",
             company: "Inspire for solutions development",
             date: "11/2021 - Present",
-            description: "I started learning React from scratch with my team lead, then learned about some libraries such as: Redux, Routing, Formik, Wizard form with formik ityped, MUI ....etc. \n" 
-                        +"\nThen joined the development team"
-        },
-        {
-            role: "Frontend Web Training",
-            company: "ITI",
-            date: "7/2020 – 9/2020",
-            description: "It was a 150 hour training at which we learned: HTML5 & CSS3, Bootstrap, jQuery, Javascript, ES6 and React"
+            
+            // description: `
+            
+            // As a Junior React Developer with two years of experience, I've contributed to 3 key projects: Taheel, Qiwa, 
+            // and BDC (Banque du Caire)
+                // - In the Taheel Project, I focused on React development using (MUI) and Axios for UI design and API 
+                // communication. I also gained expertise in SASS and (JWT) authentication. 
+                // - Transitioning to the BDC Project, I learned Next.js for server-side rendering. 
+                // - Building and enhancing a schema builder which concerned about functions that takes JSON schema and 
+                // return a reusable component which reduced the lines number extremely. 
+                // - Overall, my work has been characterized by a commitment to delivering high-quality solutions and 
+                // adapting to new technologies to meet project requirements. 
+            // `
+            description: {
+                head: `
+                    As a Junior React Developer with two years of experience, I've contributed to 3 key projects: Taheel, Qiwa, 
+                    and BDC (Banque du Caire)`,
+                list: [
+                    "In the Taheel Project, I focused on React development using (MUI) and Axios for UI design and API communication. I also gained expertise in SASS and (JWT) authentication.",
+                    "Transitioning to the BDC Project, I worked on it using Next.js for server-side rendering.",
+                    "Building and enhancing a schema builder which concerned about functions that takes JSON schema and return a reusable component which reduced the lines number extremely.",
+                    "Overall, my work has been characterized by a commitment to delivering high-quality solutions and adapting to new technologies to meet project requirements.",
+                ]
+            }
         },
     ]
 }
@@ -157,14 +209,28 @@ export const educationTimeline =
             role: "Bachelor of Engineering",
             company: "Mansoura University",
             date: "2016-2021",
-            description: `-Graduated from Computer science and control engineering department with grade of excellent with honor`+
-            `-Acheived excellent at graduation project`
+            // description: 
+            // `-Graduated from Computer science and control engineering department with grade of excellent with honor`+
+            // `-Acheived excellent at graduation project`
+            description: {
+                head: "",
+                list: [
+                    "Graduated from Computer engineering and systems department with grade of excellent with honor",
+                    "Acheived excellent at graduation project"
+                ]
+            }
         },
         {
             role: "High School",
             company: "Omar Ebn El-Khatab",
             date: "2013-2016",
-            description: "-Finished School with percentage of 95.5%"
+            // description: "-Finished School with percentage of 95.5%"
+            description: {
+                head: "",
+                list: [
+                    "Finished High School with percentage of 95.5%"
+                ]
+            }
         },
     ]
 }
