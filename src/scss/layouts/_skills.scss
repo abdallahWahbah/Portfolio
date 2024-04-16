@@ -93,6 +93,14 @@
         justify-content: center;
         height: 15rem;
         
+        @include respond(tab-land)
+        {
+            height: 12rem;
+        }
+        @include respond(tab-port)
+        {
+            height: 10rem;
+        }
         &:not(:last-of-type)
         {
             margin-bottom: 2rem;
@@ -101,7 +109,15 @@
 
     &__image
     {
-        width: 50%;
-        // height: 70%;
+        width: 65%;
+
+        @include respond(tab-land)
+        {
+            width: 70%;
+        }
+        @include respond(phone)
+        {
+            width: 85%;
+        }
     }
 }
