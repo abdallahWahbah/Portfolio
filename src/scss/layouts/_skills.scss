@@ -4,6 +4,7 @@
     margin-bottom: 8rem;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2%;
 }
@@ -125,24 +126,32 @@
 
 .skill
 {
+    &__list--item
+    {
+        display: flex;
+        align-items: baseline;
+    }
     &__item
     {
-        flex-basis: 18%;
+        box-sizing: content-box;
+        flex-basis: 17%;
         border-radius: 1rem;
         background-color: var(--color-navigation-border);
         padding: 1rem 4rem;
         margin-bottom: 2rem;
+        height: 8.6rem;
         
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        // height: 15rem;
+        align-items: center;
 
+        @include respond(tab-port)
+        {
+            flex-basis: 19%;
+        }
     }
     &__icon--container
     {
         margin-right: .7rem;
-        position: relative;
     }
     &__icon
     {
