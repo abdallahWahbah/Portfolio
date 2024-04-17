@@ -365,6 +365,10 @@ export const contactData =
                 type: "address",
                 linkTitle: "Mansoura, Dakahlia, Egypt"
             },
+            {
+                type: "address",
+                linkTitle: "Riyadh, Saudi Arabia"
+            },
             
         ]
         
