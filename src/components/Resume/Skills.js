@@ -2,7 +2,6 @@ import React from 'react'
 
 const Skills = ({skills}) => 
 {
-    const getImage = (path) => import(path).then(image => console.log(image));
     return (
         // css file: layout/skills
         <ul className='skills__list'>
@@ -16,7 +15,16 @@ const Skills = ({skills}) =>
                             <span className='skill__line--above' style={{width: `${skill.percentage}%`}}/>
                         </div>
                     </div> */}
-                    <img className='skill__image' src={skill.image} alt={skill.title}/> 
+
+                    {/* <img className='skill__image' src={skill.image} alt={skill.title}/>  */}
+                
+                    <div className='skill__icon--container'>
+                        {skill.icon && (skill.icon)}
+                    </div>
+                    <div className='skill__data--container'>
+                        <h4 className='skill__name'>{skill.title}</h4>
+                        <span className='skill__level'>{skill.level}</span>
+                    </div>
                 </li>
             ))}
         </ul>

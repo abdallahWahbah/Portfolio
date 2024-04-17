@@ -6,6 +6,7 @@ import {GoBook} from 'react-icons/go';
 import {BsTelephone} from 'react-icons/bs';
 import {AiOutlineMail} from 'react-icons/ai'
 import {IoLocationOutline} from 'react-icons/io5';
+import VerifiedIcon from '@mui/icons-material/Verified';
 import * as yup from 'yup';
 
 
@@ -92,70 +93,110 @@ export const skills =
     {
         title: "HTML5",
         image: "/skills/html5.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "CSS3",
         image: "/skills/css3.webp",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "SASS",
         image: "skills/sass.svg",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Reponsive design",
         image: "skills/responsiveDesgin.svg",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "JavaScript",
         image: "skills/JS.svg",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "ES6",
         image: "skills/es6.svg",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Axios",
         image: "skills/axios.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "ReactJS",
         image: "skills/reactImage.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Reach Hooks",
         image: "skills/reactHooks.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "intermediate",
     },
     {
         title: "Redux",
         image: "skills/redux.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "intermediate",
     },
-    // {
-    //     title: "Context",
-    //     image: "skills/context.png",
-    // },
+    {
+        title: "Context",
+        image: "skills/context.png",
+         icon: <VerifiedIcon className="skill__icon"/>,
+        level: "intermediate",
+    },
     {
         title: "Next.js",
         image: "skills/next.webp",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Git & Github",
         image: "skills/git.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "intermediate",
     },
     {
         title: "MUI",
         image: "skills/mui.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Formik",
         image: "skills/formik.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "Formik Wizard",
         image: "skills/formikWizard.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
     },
     {
         title: "DSA",
         image: "skills/dsa.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "experienced",
+    },
+    {
+        title: "React Native",
+        // image: "skills/dsa.png",
+        icon: <VerifiedIcon className="skill__icon"/>,
+        level: "basics",
     },
     
 ]
